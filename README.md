@@ -1,3 +1,4 @@
+project use mode translate from English to Vietnamese 
 how to use:
 pip install -r requirements.txt
 firt run: please run file test.py to download model of vinai
