@@ -9,22 +9,6 @@ document.addEventListener("mouseup", function(event) {
 });
 
 
-// document.addEventListener("touchend", function(event) {
-//     // Lấy văn bản được chọn
-//     let selectedText = window.getSelection().toString().trim();
-    
-//     // Nếu có văn bản được chọn
-//     if (selectedText.length > 0) {
-//         // Gửi văn bản qua WebSocket
-//         socket.emit('text_selected', selectedText);
-//     }
-// });
-
-document.addEventListener2("click", function() {
-    tooltip.style.display = "none"; // Ẩn tooltip khi click bất kỳ đâu
-});
-
-
 socket.on('text_ack', function(data) {
     console.log("Received from server:", data); 
     let selection = window.getSelection();
